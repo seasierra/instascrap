@@ -1,3 +1,7 @@
+export const config = {
+  runtime: "nodejs", // this is a pre-requisite
+};
+
 export default async function handle(req, res) {
   try {
     const urlFromClient = req.body.url;

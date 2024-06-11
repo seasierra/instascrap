@@ -8,11 +8,16 @@ export function isValidURL(string) {
 }
 
 export const post = (endpoint, data) => {
-  return fetch(new URL(`${process.env.VERCEL_URL}/api/${endpoint}`), {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
+  return fetch(
+    new URL(
+      `${process.env.VERCEL_URL || "http://localhost:3000"}/api/${endpoint}`
+    ),
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
 };

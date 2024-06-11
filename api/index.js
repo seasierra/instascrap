@@ -1,5 +1,9 @@
 import { startVercel } from "../src/bot.js";
 
+export const config = {
+  runtime: "nodejs", // this is a pre-requisite
+};
+
 export default async function handle(req, res) {
   try {
     await startVercel(req, res);
