@@ -1,3 +1,7 @@
+import createDebug from "debug";
+
+const debug = createDebug("bot:dev");
+
 const PORT = (process.env.PORT && parseInt(process.env.PORT, 10)) || 3000;
 const VERCEL_URL = `${process.env.VERCEL_URL}`;
 
