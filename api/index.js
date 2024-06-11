@@ -1,6 +1,6 @@
 import bodyParser from "body-parser";
 import express from "express";
-import { bot } from "./bot";
+import { bot } from "../src/bot";
 
 const app = express();
 const port = 3000;
