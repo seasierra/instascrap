@@ -3,8 +3,7 @@
   "module": "./src/index.js",
   "type": "module",
   "scripts": {
-    "dev": "DEBUG=bot* dotenv -- nodemon src/index.js",
-    "build": "ncc build src/index.js -o public -m"
+    "dev": "DEBUG=bot* dotenv -- nodemon src/index.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
