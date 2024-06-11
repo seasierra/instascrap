@@ -1,5 +1,6 @@
 import { Telegraf } from "telegraf";
 import { message } from "telegraf/filters";
+import { production } from "./core/prod";
 import { isValidURL } from "./utils";
 
 export const bot = new Telegraf(process.env.BOT_TOKEN);
@@ -20,3 +21,5 @@ bot.on(message("text"), (ctx) => {
     ctx.reply("Subscription added succesfully");
   }
 });
+
+export const startVercel = (req, res) => production(req, res, bot);
