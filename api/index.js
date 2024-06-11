@@ -1,4 +1,4 @@
-import { startVercel } from "../src/bot";
+import { startVercel } from "../src/bot.js";
 
 export default async function handle(req, res) {
   try {

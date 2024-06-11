@@ -1,7 +1,7 @@
 import { Telegraf } from "telegraf";
 import { message } from "telegraf/filters";
-import { production } from "./core/prod";
-import { isValidURL } from "./utils";
+import { production } from "./core/prod.js";
+import { isValidURL } from "./utils.js";
 
 export const bot = new Telegraf(process.env.BOT_TOKEN);
 
