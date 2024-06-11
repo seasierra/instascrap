@@ -18,3 +18,5 @@ bot.on(message("text"), async (ctx) => {
 export const startVercel = (req, res) => production(req, res, bot);
 
 process.env.NODE_ENV !== "production" && development(bot);
+
+console.log(process.env.NODE_ENV);

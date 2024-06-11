@@ -5,6 +5,8 @@ const debug = createDebug("bot:dev");
 const development = async (bot) => {
   const botInfo = (await bot.telegram.getMe()).username;
 
+  debug(bot.telegram.getWebhookInfo());
+
   debug("Bot runs in development mode");
   debug(`${botInfo} deleting webhook`);
   await bot.telegram.deleteWebhook();

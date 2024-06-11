@@ -1,7 +1,9 @@
+import debug from "debug";
 import { startVercel } from "../src/bot.js";
 
 export default async function handle(req, res) {
   try {
+    debug(req.url);
     await startVercel(req, res);
   } catch (e) {
     res.statusCode = 500;
