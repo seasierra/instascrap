@@ -3,7 +3,7 @@
   "module": "index.js",
   "type": "module",
   "scripts": {
-    "start": "bun run ./src/index.js"
+    "start": "bun run ./api/index.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
